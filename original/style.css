@@ -3,7 +3,7 @@
 li{
   list-style: none;
   margin-top: 20px;
-  margin-right: 20px;
+  margin-left: 20px;
   color: rgb(255, 255, 255);
 }
 
@@ -44,16 +44,29 @@ header{
 }
 
 #content{
-    position: relative;
-    margin: 100px auto;
-    padding: 20px;
-    max-width: 1000px;
-  }
-
+  position: relative;
+  margin: 100px auto;
+  padding: 20px;
+  max-width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+}
 .set{
-  background-color: #ccc;
-  min-height: 400px;
-  margin-bottom: 40px;
+  width: 33.3%;
+  padding-top: 33.3%;
+  height: 0;
+  position: relative;
+}
+.set img{
+  width: 95%;
+  height: 95%;
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
 body.one #backimg01,
